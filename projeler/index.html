@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamamlanan Projelerimiz | Emre Mühendislik - Yalova & Çınarcık</title>
+
+    <meta name="description" content="Emre Mühendislik tarafından Yalova ve Çınarcık bölgesinde tamamlanan doğal gaz tesisatı, kombi montajı ve iç dekorasyon projeleri.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#026597',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            gold: '#d97706',
+                            accent: '#2563eb'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-bg {
+            background: radial-gradient(circle at 50% 20%, rgba(2, 132, 199, 0.25) 0%, rgba(15, 23, 42, 1) 70%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Üst Bilgi Çubuğu -->
+    <div class="bg-slate-900 border-b border-slate-800 text-xs py-2 px-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap">
+                <span class="flex items-center gap-1.5 text-slate-300">
+                    <i class="fa-solid fa-location-dot text-brand-500"></i>
+                    Taşliman Mah. Ahmet Sugün Cad. No:14/B Çınarcık / Yalova
+                </span>
+                <a href="mailto:emremuhendislik77@hotmail.com" class="flex items-center gap-1.5 text-slate-300 hover:text-brand-500 transition">
+                    <i class="fa-solid fa-envelope text-brand-500"></i>
+                    emremuhendislik77@hotmail.com
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:05334242765" class="hover:text-brand-500"><i class="fa-solid fa-phone text-brand-500 mr-1"></i>0533 424 27 65</a>
+                <a href="tel:05398227752" class="hover:text-brand-500"><i class="fa-solid fa-mobile-screen text-brand-500 mr-1"></i>0539 822 77 52</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ana Navigasyon -->
+    <nav class="bg-slate-900/90 backdrop-blur-md border-b border-slate-800 py-4 px-4 sticky top-[33px] z-40">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- LOGO: Kök dizine temiz yönlendirme -->
+            <a href="../" class="flex items-center gap-3">
+                <img src="../emre-logo.png" alt="Emre Mühendislik Logo" class="w-16 h-12 object-contain">
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white block">EMRE MÜHENDİSLİK</span>
+                    <span class="text-[10px] text-brand-500 tracking-widest uppercase block font-semibold">Isıtma Sistemleri & İç Dekorasyon</span>
+                </div>
+            </a>
+
+            <!-- Masaüstü Menü -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="../#anasayfa" class="hover:text-brand-500 transition">Ana Sayfa</a>
+                <a href="../#hizmetler" class="hover:text-brand-500 transition">Hizmetlerimiz</a>
+                <a href="../urunler/" class="hover:text-brand-500 transition">Ürün Kataloğu</a>
+                <a href="./" class="text-brand-500 font-bold transition">Projelerimiz</a>
+                <a href="../#iletisim" class="hover:text-brand-500 transition">İletişim</a>
+            </div>
+
+            <!-- Sağ Taraf: WhatsApp + Mobil Hamburger Butonu -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/905334242765" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl font-semibold text-sm transition shadow-lg shadow-emerald-600/20">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    WhatsApp Bilgi
+                </a>
+
+                <!-- Mobil Hamburger Butonu -->
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-slate-300 hover:text-white p-2 rounded-lg bg-slate-800 border border-slate-700">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobil Açılır Menü İçeriği -->
+        <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2 border-t border-slate-800 mt-4 flex flex-col gap-3 font-medium text-sm text-slate-300 px-2">
+            <a href="../#anasayfa" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="hover:text-brand-500 py-2 border-b border-slate-800/50 transition">Ana Sayfa</a>
+            <a href="../#hizmetler" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="hover:text-brand-500 py-2 border-b border-slate-800/50 transition">Hizmetlerimiz</a>
+            <a href="../urunler/" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="hover:text-brand-500 py-2 border-b border-slate-800/50 transition">Ürün Kataloğu</a>
+            <a href="./" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="text-brand-500 font-bold py-2 border-b border-slate-800/50 transition">Projelerimiz</a>
+            <a href="../#iletisim" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="hover:text-brand-500 py-2 transition">İletişim</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <section class="hero-bg py-16 px-4 text-center border-b border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-brand-500 text-xs font-bold uppercase tracking-widest mb-2 block">MÜHENDİSLİK VE UYGULAMA GALERİSİ</span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Proje Çalışmalarımız</h1>
+            <p class="text-slate-400 text-base sm:text-lg">
+                Yalova ve Çınarcık genelinde başarıyla tamamladığımız doğal gaz tesisatı, kombi montajı ve iç mekân yenileme işlerimiz.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projeler Izgarası -->
+    <section class="py-16 px-4 bg-slate-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- PROJE KARTI 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 group hover:border-brand-500/50 transition">
+                    <div class="relative h-64 overflow-hidden bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" alt="Saha Çalışması" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-full">Doğal Gaz & Tesisat</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-slate-500 text-xs font-medium block mb-1"><i class="fa-solid fa-location-dot mr-1"></i> Çınarcık / Yalova</span>
+                        <h3 class="text-lg font-bold text-white mb-2">Bina Ana Kolon Gaz Tesisatı</h3>
+                        <p class="text-slate-400 text-sm">Onaylı proje ve yetkili gaz açma işlemleriyle birlikte teslim edilen daire içi tesisat uygulaması.</p>
+                    </div>
+                </div>
+
+                <!-- PROJE KARTI 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 group hover:border-brand-500/50 transition">
+                    <div class="relative h-64 overflow-hidden bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Mutfak Uygulaması" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">İç Dekorasyon</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-slate-500 text-xs font-medium block mb-1"><i class="fa-solid fa-location-dot mr-1"></i> Yalova Merkez</span>
+                        <h3 class="text-lg font-bold text-white mb-2">Mutfak Dolabı & Tezgah Yenileme</h3>
+                        <p class="text-slate-400 text-sm">Özel ölçü imalat modern mutfak dolabı montajı ve zemin seramik uygulaması.</p>
+                    </div>
+                </div>
+
+                <!-- PROJE KARTI 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 group hover:border-brand-500/50 transition">
+                    <div class="relative h-64 overflow-hidden bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1503708928676-1cb796a0891e?auto=format&fit=crop&w=800&q=80" alt="PVC Pencere Montajı" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">PVC Doğrama</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-slate-500 text-xs font-medium block mb-1"><i class="fa-solid fa-location-dot mr-1"></i> Çınarcık / Taşliman</span>
+                        <h3 class="text-lg font-bold text-white mb-2">PVC Pencere & Isı Yalıtım Doğrama</h3>
+                        <p class="text-slate-400 text-sm">Eski pencerelerin sökülerek ısı yalıtımlı çift cam PVC sistemleri ile yenilenmesi.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Geri Dönüş ve WhatsApp Butonu -->
+            <div class="mt-16 text-center bg-slate-900 border border-slate-800 p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold text-white mb-2">Sizin Evinize de Emre Mühendislik Kalitesi Getirelim</h3>
+                <p class="text-slate-400 max-w-xl mx-auto mb-6 text-sm">Yerinde keşif ve projelerinize özel fiyat almak için bizimle doğrudan iletişime geçebilirsiniz.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://wa.me/905334242765?text=Merhaba,%20proje%20ve%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-3.5 rounded-xl inline-flex items-center gap-2 transition shadow-lg shadow-emerald-600/20">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp ile Ulaşın
+                    </a>
+                    <a href="../" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-3.5 rounded-xl inline-flex items-center gap-2 transition border border-slate-700">
+                        <i class="fa-solid fa-arrow-left"></i> Ana Sayfaya Dön
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-8 px-4 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 Emre Mühendislik. Tüm hakları saklıdır.</p>
+            <p>Taşliman Mah. Ahmet Sugün Cad. No: 14/B, Çınarcık / Yalova</p>
+        </div>
+    </footer>
+
+</body>
+</html>
