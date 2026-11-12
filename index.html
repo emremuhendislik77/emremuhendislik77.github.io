@@ -201,12 +201,17 @@
                 </div>
             </div>
 
-            <!-- Görsel Kartı -->
+            <!-- Görsel Kartı (1080x900 oranına tam uyumlu - Sıfır Kırpılma) -->
             <div class="relative">
                 <div class="glass-card p-6 rounded-3xl border border-slate-800 shadow-2xl relative z-10">
-                    <div class="relative h-72 rounded-2xl overflow-hidden mb-6 group">
-                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" alt="Yalova Çınarcık Kombi Montajı ve Isıtma Tesisatı Emre Mühendislik" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    
+                    <!-- 1080x900 oranına tam oturan, object-contain ile kırpılmayan kutu -->
+                    <div class="relative aspect-[10/9] w-full rounded-2xl overflow-hidden mb-6 bg-slate-950/60 flex items-center justify-center group">
+                        <img src="buyuk-resim.jpg" 
+                             alt="Yalova Çınarcık Kombi Montajı ve Isıtma Tesisatı Emre Mühendislik" 
+                             class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
                     </div>
+
                     <div class="flex justify-between items-center mb-4">
                         <div>
                             <h2 class="text-xl font-bold text-white">Tam Yoğuşmalı Kombi & Radyatörler</h2>
@@ -214,6 +219,7 @@
                         </div>
                         <span class="text-brand-500 font-extrabold text-lg">Uygun Fiyat</span>
                     </div>
+
                     <a href="https://wa.me/905334242765?text=Merhaba,%20Kombi%20ve%20Radyatör%20fiyatları%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition">
                         <i class="fa-brands fa-whatsapp text-lg"></i> Fiyat & Sipariş İçin Tıklayın
                     </a>
