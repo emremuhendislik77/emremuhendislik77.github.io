@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa Bulunamadı (404) | Emre Mühendislik - Yalova & Çınarcık</title>
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#026597',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            gold: '#d97706',
+                            accent: '#2563eb'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-bg {
+            background: radial-gradient(circle at 50% 20%, rgba(2, 132, 199, 0.25) 0%, rgba(15, 23, 42, 1) 70%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Üst Bilgi Çubuğu -->
+    <div class="bg-slate-900 border-b border-slate-800 text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap">
+                <span class="flex items-center gap-1.5 text-slate-300">
+                    <i class="fa-solid fa-location-dot text-brand-500"></i>
+                    Taşliman Mah. Ahmet Sugün Cad. No:14/B Çınarcık / Yalova
+                </span>
+                <a href="mailto:emremuhendislik77@hotmail.com" class="flex items-center gap-1.5 text-slate-300 hover:text-brand-500 transition">
+                    <i class="fa-solid fa-envelope text-brand-500"></i>
+                    emremuhendislik77@hotmail.com
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:05334242765" class="hover:text-brand-500"><i class="fa-solid fa-phone text-brand-500 mr-1"></i>0533 424 27 65</a>
+                <a href="tel:05398227752" class="hover:text-brand-500"><i class="fa-solid fa-mobile-screen text-brand-500 mr-1"></i>0539 822 77 52</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ana Navigasyon -->
+    <nav class="bg-slate-900/90 backdrop-blur-md border-b border-slate-800 py-4 px-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-12 h-10 rounded-lg bg-brand-500/20 border border-brand-500/40 flex items-center justify-center text-brand-500 font-extrabold text-lg">EM</div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white block">EMRE MÜHENDİSLİK</span>
+                    <span class="text-[10px] text-brand-500 tracking-widest uppercase block font-semibold">Isıtma Sistemleri & İç Dekorasyon</span>
+                </div>
+            </a>
+            
+            <a href="https://wa.me/905334242765" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl font-semibold text-sm transition shadow-lg shadow-emerald-600/20">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                WhatsApp Bilgi
+            </a>
+        </div>
+    </nav>
+
+    <!-- Ana İçerik (404 Alanı) -->
+    <main class="hero-bg flex-1 flex items-center justify-center py-20 px-4">
+        <div class="max-w-xl w-full text-center glass-card p-8 sm:p-12 rounded-3xl shadow-2xl border border-slate-800">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-500 text-3xl font-extrabold mb-6 shadow-inner animate-pulse">
+                404
+            </div>
+            
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Aradığınız Sayfa Bulunamadı</h1>
+            <p class="text-slate-400 text-sm sm:text-base mb-8 leading-relaxed">
+                Ulaşmaya çalıştığınız sayfa kaldırılmış, adı değiştirilmiş veya geçici olarak yayından kaldırılmış olabilir. Ana sayfaya dönerek aradığınız hizmete kolayca ulaşabilirsiniz.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="bg-brand-500 hover:bg-brand-600 text-white font-bold px-8 py-3.5 rounded-xl transition flex items-center gap-2 shadow-lg shadow-brand-500/30">
+                    <i class="fa-solid fa-house"></i> Ana Sayfaya Dön
+                </a>
+                <a href="tel:05334242765" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-3.5 rounded-xl transition flex items-center gap-2 border border-slate-700">
+                    <i class="fa-solid fa-phone"></i> Bize Ulaşın
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-8 px-4 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 Emre Mühendislik. Tüm hakları saklıdır.</p>
+            <p>Taşliman Mah. Ahmet Sugün Cad. No: 14/B, Çınarcık / Yalova</p>
+        </div>
+    </footer>
+
+</body>
+</html>
